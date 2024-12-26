@@ -1,0 +1,7 @@
+파일로부터 minterm을 입력받아서 string 벡터 minterm에 저장
+minterm들을 돌면서 1의 갯수에 맞춰서 2차원 string 벡터 column에 저장(1의 갯수가 n개라면 n행에 저장)
+implicant table의 한 cloumn을 2차원 벡터로 가지는 qm리스트에 cloumn 저장
+한 열의 모든 항을 가지고 다음 항을 만듬, 다음 열이 비어있지 않을 때 까지 반복하며 qm에 저장
+(한 열을 결합하여 새로운 열을 만드는 next_col, 최소항끼리 결합하여 새로운 항을 만드는 combine 사용)
+qm에 implicant table을 구성하는 모든 column들이 저장되어 있음
+
